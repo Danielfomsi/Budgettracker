@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--WORK ON COMMENT SECTION-->
+    <div class="container">
+        <h1>Budget Tracker</h1>
+        <div class="input-group">
+            <input type="text" id="inflowDescription" placeholder="Inflow Description">
+            <input type="number" id="receivedAmount" placeholder="Amount Received">
+            <button id="addExpense">Add Received</button>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="expenseName" placeholder="Expense Name">
+            <input type="number" id="expenseAmount" placeholder="Amount">
+            <button id="addExpense">Add Expense</button>
+        </div>
+
+        <h3>Total Received: #<span id="totalReceived">0</span></h3> <!-- New total received display -->
+        <h3>Total Expenses: #<span id="totalExpenses">0</span></h3> <!-- Total expenses display -->
+        <h3>Balance: #<span id="totalBalance">0</span></h3> <!-- New total balance display -->
+
+        <ul id="inflowList"></ul>
+        <ul id="expenseList"></ul>
+        
+        <button id="resetButton">Reset Button</button>
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
